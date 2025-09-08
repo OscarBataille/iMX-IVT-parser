@@ -1,6 +1,6 @@
 # iMX-IVT-parser
 Parse the Image Vector Tables of i.MX 6 firmwares.
-The Boot Data Structure address gives the offset when importing the firmware in a Reverse Engineering tool like Ghidra.
+The Boot Data Structure address provides the offset needed to import the firmware in a Reverse Engineering tool like Ghidra.
 
 ## How to use
 
