@@ -4,8 +4,17 @@ The Boot Data Structure address provides the offset needed to import the firmwar
 
 ## How to use
 
+Example with the Kindle (10th gen) `U-boot.bin`:
+
+Run the script with: 
+
 ```bash
 oscar@LAPTOP-O36CJECO:~/iMX-IVT-parser$ python3 script.py ../kindle/outpiut/imx6sll_rex/u-boot.bin
+```
+
+Output:
+
+```
 Loaded firmware file: ../kindle/outpiut/imx6sll_rex/u-boot.bin (519168 bytes)
 Searching for IVT magic bytes...
 Found 2 IVT(s) at offsets: ['0x0', '0x4000']
@@ -104,3 +113,5 @@ After a successful DCD extraction, the ROM code extracts from the Boot Data Stru
 
 ============================================================
 ```
+
+*The u-boot.bin can be imported into Ghidra with the offset 0x877FBBD4.*
